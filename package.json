@@ -3,12 +3,7 @@
   "version": "0.1.2",
   "description": "Pandoc wrapper that makes it seamlessly available as a local dependency on OS X, Linux, and Windows",
   "license": "MIT",
-  "repository": "https://github.com/toshgoodson/pandoc-bin",
-  "author": {
-    "name": "Tosh Goodson",
-    "email": "tosh.goodson@gmail.com",
-    "url": "http://www.toshgoodson.com"
-  },
+  "repository": "https://github.com/bishenes/pandoc-bin",
   "engines": {
     "node": ">=0.10.0"
   },
