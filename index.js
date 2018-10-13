@@ -10,10 +10,10 @@ var path = require('path');
  */
 
 var bin = new BinWrapper({ global: false })
-	.src('https://github.com/bishenes/pandoc-bin/raw/master/vendor/osx/pandoc', 'darwin')
-	.src('https://github.com/bishenes/pandoc-bin/raw/master/vendor/linux/x86/pandoc', 'linux', 'x86')
-	.src('https://github.com/bishenes/pandoc-bin/raw/master/vendor/linux/x64/pandoc', 'linux', 'x64')
-	.src('https://github.com/bishenes/pandoc-bin/raw/master/vendor/win/pandoc.exe', 'win32')
+	.src('https://raw.github.com/bishenes/pandoc-bin/master/vendor/osx/pandoc', 'darwin')
+	.src('https://raw.github.com/bishenes/pandoc-bin/master/vendor/linux/x86/pandoc', 'linux', 'x86')
+	.src('https://raw.github.com/bishenes/pandoc-bin/master/vendor/linux/x64/pandoc', 'linux', 'x64')
+	.src('https://raw.github.com/bishenes/pandoc-bin/master/vendor/win/pandoc.exe', 'win32')
 	.dest(path.join(__dirname, 'vendor'))
 	.use(process.platform === 'win32' ? 'pandoc.exe' : 'pandoc');
 
